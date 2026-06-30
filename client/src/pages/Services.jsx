@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { SERVICES, SERVICE_ICONS } from '../utils/constants';
+import { SERVICES } from '../utils/constants';
+import ServiceIcon from '../components/ServiceIcon';
 
 const SERVICE_DESCRIPTIONS = {
   'Pressure Washing':             'High-pressure water cleaning for siding, driveways, fences, and more. Removes dirt, grime, mold, and mildew fast.',
@@ -96,10 +97,10 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {visibleServices.map((svc) => (
               <div key={svc} className="card-hover group p-7">
-                <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl mb-5
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5
                                 transition-transform duration-200 group-hover:scale-110"
                      style={{ background: 'linear-gradient(135deg, #f0f7fc, #e2f0f9)' }}>
-                  {SERVICE_ICONS[svc]}
+                  <ServiceIcon name={svc} size="lg" />
                 </div>
                 <h3 className="font-bold text-navy text-base mb-2">{svc}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed mb-5">{SERVICE_DESCRIPTIONS[svc]}</p>

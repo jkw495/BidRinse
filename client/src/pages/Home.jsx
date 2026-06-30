@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { SERVICES, SERVICE_ICONS } from '../utils/constants';
+import { SERVICES } from '../utils/constants';
+import ServiceIcon from '../components/ServiceIcon';
 
 /* ── Data ──────────────────────────────────────────────── */
 const QUOTES_PREVIEW = [
@@ -229,10 +230,10 @@ export default function Home() {
                    className="bg-white rounded-2xl border border-gray-100 p-4 text-center group
                               cursor-default transition-all duration-200 hover:border-sky-200 hover:-translate-y-0.5 hover:shadow-md"
                    style={{ boxShadow: '0 1px 3px rgba(0,0,0,0.04)' }}>
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl mx-auto mb-2.5
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-2.5
                                 transition-transform duration-200 group-hover:scale-110"
                      style={{ background: 'linear-gradient(135deg, #f0f7fc, #e2f0f9)' }}>
-                  {SERVICE_ICONS[svc]}
+                  <ServiceIcon name={svc} />
                 </div>
                 <p className="text-xs font-semibold text-gray-700 leading-snug">{svc}</p>
               </div>

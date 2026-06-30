@@ -32,18 +32,18 @@ export const COUNTIES = [
 ];
 
 export const SERVICE_ICONS = {
-  'Pressure Washing':             '💧',
-  'Soft Washing':                 '🫧',
+  'Pressure Washing':             '💦',
+  'Soft Washing':                 '🧴',
   'Roof Cleaning':                '🏠',
-  'Gutter Cleaning':              '🍂',
+  'Gutter Cleaning':              '🪣',
   'Window Cleaning':              '🪟',
-  'Concrete / Driveway Cleaning': '🚗',
-  'Deck and Patio Cleaning':      '🪴',
-  'Fence Cleaning':               '🪵',
+  'Concrete / Driveway Cleaning': '🛣️',
+  'Deck and Patio Cleaning':      '🪑',
+  'Fence Cleaning':               '🏡',
   'Dock and Pier Cleaning':       '⚓',
   'Commercial Building Cleaning': '🏢',
-  'Mobile Car Washing':           '🚘',
-  'RV Washing':                   '🚌',
+  'Mobile Car Washing':           '🚗',
+  'RV Washing':                   '🚐',
   'Fleet Washing':                '🚛',
   'Solar Panel Cleaning':         '☀️',
 };
